@@ -14,7 +14,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Pluttooo96/insure-landing-page
-- Live Site URL: https://github.com/Pluttooo96/insure-landing-page
+- Live Site URL: https://Pluttooo96.github.io/insure-landing-page
 
 ## My process
 
