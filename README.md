@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Frontend Mentor - Insure landing page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Insure landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+### The challenge
 
-### `npm start`
+Users should be able to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Links
 
-### `npm test`
+- Solution URL: https://github.com/Pluttooo96/insure-landing-page
+- Live Site URL: https://github.com/Pluttooo96/insure-landing-page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## My process
 
-### `npm run build`
+### Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Semantic HTML5 markup
+- CSS 
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What I done
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+That was my first fully completed landing page. I tried to create few of them before, but never end any of them. First problem of this app was creating fully responsive navbar in mobile version. Im not entirely with my solution, but it was easiest to implement. 
 
-### `npm run eject`
+The second problem was making the background. I made two approach. First that came to my mind was to make it in CSS. The downside of this was the fact that I had to put the images of background in src folder, which made everything little bit messy. Also positioning of this background element was pretty complicated. Then I tried to make some use of hooks. I used useState to make two states of this app mobile or not mobile. Then I used ternary operator to decide if div with background is going to be visible or not. I think it was better solution. The downsides of this solutions were fact that app has to make more renders than with CSS option and code is not that clear to read. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Continued development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The most important thing to do is making a button component. There is a lot of places where is would use this comp, so It's better to make new component than repeating the same code in 3 components. It would make code also less complicated to read. Also some "improvements" in CSS would be nice.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Thing to improve is of course the behaviour of the image of family. Nothing better is coming to my mind for now to make this better. Also the naming of the some classes sometimes might be confusing.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**

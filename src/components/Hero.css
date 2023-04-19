@@ -1,0 +1,223 @@
+:root{
+    --main: #2c2640
+}
+
+.hero__headimg{
+    width: 100%;
+    height: auto;
+}
+
+.hero__maininfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -10px;
+    padding: 80px 50px 60px 50px;
+    background-color: var(--main);
+    background-image: url('bg-pattern-intro-left-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.hero__background--mobile{
+    position: relative;
+    float: right;
+    margin-top: -90px;
+}
+
+.hero__maininfo--title{
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.hero__maininfo--text{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: 'Karla', sans-serif;
+    margin-block: 20px;
+}
+
+.hero__maininfo--button, .hero__findout--button{
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 15px;
+    margin: 5px;
+    color: #fff;
+    background-color: var(--main);
+    border: 1px solid #fff;
+    font-family: 'Karla', sans-serif;
+}
+
+.hero__secondinfo{
+    padding-inline: 80px;
+    text-align: center;
+    color: var(--main)
+}
+
+.hero__secondinfo--t{ 
+    font-size: 3.5rem;
+}
+
+.hero__divider--bottom {
+    border-top: solid 0.5px var(--main );
+    width: 40%;
+    border-radius: 10px;
+    margin: 90px auto; 
+}
+
+.hero__secondinfo--p{
+    padding-top: 40px;   
+}
+
+.hero__secondinfo--title{
+    padding: 20px;
+    font-size: 1.5rem;
+    color: var(--main);
+}
+
+.hero__secondinfo--note{
+    line-height: 2rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.hero__findout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px 20px 80px 20px;
+    padding: 50px;
+    background-color: var(--main);
+    background-image: url('bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.hero__findout--title{
+    font-size: 3.5rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.hero__findout--button:hover,.hero__maininfo--button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+@media screen and (min-width:640px) {
+    
+    .hero__headimg{
+        position: absolute;
+        top: 200px;
+        margin-left:62.5vw;
+        width: 30%;
+    }
+
+    .hero__uppersite{
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        background-color: var(--main);
+    }
+
+    
+    .hero__background{
+        margin-bottom: 40px;
+        z-index: 2;
+        height: 55vh;
+    }
+
+    .hero__maininfo{
+        justify-content: start;
+        align-items: start;
+        text-align: start;
+        width: 40dvw;
+        background: none;
+        padding-left: 120px;
+    }
+
+    .hero__maininfo--title{
+        font-size: 4rem;
+    }
+
+    .hero__maininfo--button{
+        margin: 20px 0 0 0 ;
+    }
+
+    .hero__background--left{
+        margin-top: -100px;
+    }
+
+    .hero__divider--top{
+        border-top: 0.5px solid #fff;
+        width: 40%;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
+    .hero__divider--bottom{
+        border-top: solid  var(--main );
+        width: 80px;
+        opacity: 30%;
+        border-radius: 10px;
+        margin: -60px 120px 40px 120px ;
+    }
+
+    .hero__secondinfo{
+        display: grid;
+        grid-template-areas:
+        "t . ."
+        "p1 p2 p3";
+        text-align: start;
+        padding-inline: 120px;
+    }
+
+    .hero__secondinfo--t{
+        grid-area: t;
+        color: #000;
+    }
+
+    #p1{
+        grid-area: p1 ;
+    }
+
+    #p2{
+        grid-area: p2;
+    }
+
+    #p3{
+        grid-area: p3;
+    }
+
+    .hero__secondinfo--p{
+         margin-right: 50px;
+    }
+
+    .hero__secondinfo--title{
+        color: #000;
+        padding: 10px 0 10px 0;
+    }
+
+    .hero__findout{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: start;
+        margin: 80px 170px 80px 120px;
+        padding: 50px;
+        background: var(--main);
+        background-image: url('bg-pattern-how-we-work-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+    }
+    
+    .hero__findout--title{
+        width: 30rem;
+        font-size: 2.5rem;
+    }
+}
